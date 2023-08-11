@@ -1,15 +1,39 @@
-.main-row{
+
+.App-header{
    height:300px;
-   width:80%;
-   border:1px solid blue;
-   display:flex;
-   margin-left:100px;
-  
+   width:600px;
+   margin-left:600px;
+   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.color{
+   margin-left:600px;
+   margin-top:30px;
    
-} 
-.colum{
-    height:300px;
-    width:300px;
-    border:1px solid red;
-    margin-left:70px;
+}
+.yellow{
+  height:40px;
+  width:100px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.purple{
+  height:40px;
+  width:100px;
+  margin-left:60px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+   
+}
+.blue{
+  height:40px;
+  width:100px;
+  margin-left:60px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
+}
+.green{
+   height:40px;
+   width:100px;
+   margin-left:80px;
+   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.yellow-box{
+   
 }

@@ -6,20 +6,32 @@ import Background_color from "./background-change";
 function App() {
 
   const colors = ['#ffc800', '#A020F0', '#00BFFF', '#32CD32'];
-   
-  const [redCount,setRedCount]=useState(0);
-  const [blueCount,setCount]=useState(0);
-  const [yellowCount,setYellowCount]=useState(0);
-  const [greenCount,setGreenCount]=useState(0);
+  
+  const [yellowLike, setYellowLike] = useState(0);
+  const [blueLike,setBlueLike]=useState(0);
+  
+  
+  
   const [bgColor, setBgColor] = useState(colors[0]); 
   
   
-
+ 
+  
   const changeColor = (color) => {
+  
     setBgColor(color);
-    setRedCount(redCount+1)
+     
     
   };
+  
+  const onYellowEvent=()=>{
+      setYellowLike(yellowLike+1)
+  }
+  
+  const onBlueEvent=()=>{
+     setBlueLike(blueLike+1)
+  }
+  
   
   return (
   
@@ -30,8 +42,16 @@ function App() {
          bgColor={bgColor}
          
          colors={colors}
+         onYellowEvent={onYellowEvent}
+         yellowLike={yellowLike}
+         onBlueEvent={onBlueEvent}
+         blueLike={blueLike}
          
-         redCount={redCount}
+         
+      
+         
+        
+        
          
       />
    

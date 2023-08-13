@@ -11,11 +11,23 @@ function Background_color({changeColor,bgColor,colors,yellowLike,onYellowEvent,o
             </div>
            
            
-           <div>
+           <div className="color-count">
+           
+             <div>
               <p>count:{yellowLike}</p>
+             </div>
+             
+             <div> 
               <p>count blue :{blueLike}</p>
+              </div>
+              <div>
               <p>count:{greenLike}</p>
+              </div>
+              <div>
+              
               <p>count purpleLike:{purpleLike}</p>
+              </div>
+              
               
            </div>   
           

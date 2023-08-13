@@ -1,4 +1,4 @@
-function Background_color({changeColor,bgColor,colors,yellowLike,onYellowEvent,onBlueEvent,blueLike}){
+function Background_color({changeColor,bgColor,colors,yellowLike,onYellowEvent,onBlueEvent,blueLike,onGreenEvent,greenLike,onPurpleEvent,purpleLike}){
 
      return(
      
@@ -11,9 +11,14 @@ function Background_color({changeColor,bgColor,colors,yellowLike,onYellowEvent,o
             </div>
            
            
-           
-          <p>count:{yellowLike}</p>
-          <p>count blue :{blueLike}</p>
+           <div>
+              <p>count:{yellowLike}</p>
+              <p>count blue :{blueLike}</p>
+              <p>count:{greenLike}</p>
+              <p>count purpleLike:{purpleLike}</p>
+              
+           </div>   
+          
                       
             <div className="color">
                 
@@ -25,7 +30,7 @@ function Background_color({changeColor,bgColor,colors,yellowLike,onYellowEvent,o
               
                <div className="purple-box">
                    <p>thiS is Purple color</p>
-                   <button onClick={() => changeColor(colors[1])}   className="purple">Purple</button>
+                   <button onClick={() => changeColor(colors[1])}  onClick={onPurpleEvent}  className="purple">Purple</button>
                </div> 
                 
                 
@@ -37,7 +42,7 @@ function Background_color({changeColor,bgColor,colors,yellowLike,onYellowEvent,o
                
                <div className="green-box">
                    <p>thiS is Green color</p>
-                   <button onClick={() => changeColor(colors[3])} className="green">Green</button>
+                   <button onClick={() => changeColor(colors[3])} onClick={onGreenEvent} className="green">Green</button>
                </div>
                
                 

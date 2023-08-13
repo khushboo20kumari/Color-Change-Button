@@ -10,6 +10,11 @@ function App() {
   const [yellowLike, setYellowLike] = useState(0);
   const [blueLike,setBlueLike]=useState(0);
   
+  const [greenLike,setGreenLike]=useState(0);
+  
+  const [purpleLike,setPurpleLike]=useState(0);
+  
+  
   
   
   const [bgColor, setBgColor] = useState(colors[0]); 
@@ -32,7 +37,13 @@ function App() {
      setBlueLike(blueLike+1)
   }
   
+  const onGreenEvent=()=>{
+     setGreenLike(greenLike+1)
+  }
   
+  const onPurpleEvent=()=>{
+     setPurpleLike(purpleLike+1)
+  }
   return (
   
       <Background_color
@@ -43,9 +54,22 @@ function App() {
          
          colors={colors}
          onYellowEvent={onYellowEvent}
+         
          yellowLike={yellowLike}
+         
          onBlueEvent={onBlueEvent}
+         
          blueLike={blueLike}
+         
+         onGreenEvent={ onGreenEvent}
+         greenLike={greenLike}
+         
+         onPurpleEvent={onPurpleEvent}
+                      
+         purpleLike={purpleLike}
+         
+         
+         
          
          
       
